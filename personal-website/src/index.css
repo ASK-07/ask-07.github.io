@@ -92,7 +92,10 @@ a {
 }
 
 .button {
-  margin-left: 225px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100px;
   padding: .25em .25em;
   border-radius: 10px;
   background: #146ef5;
