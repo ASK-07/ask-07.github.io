@@ -1,33 +1,100 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <h1>Alex Kaylor</h1>
+        <h2>Junior Developer</h2>
+        <h2>Texas State University</h2>
+        <h2>B.S. Computer Science</h2>
+        <h2>Minor: Applied Mathematics</h2>
+        <h3>Phone: (469) 767-1068</h3>
+        <h3>Email: askaylor7@gmail.com</h3>
+        <a href="https://github.com/ASK-07" className="button">GitHub</a>
+
+        <section className="skills">
+          <h2>Language Proficiency</h2>
+
+          <div className="skill">
+            <h2>Python</h2>
+            <div className="bar">
+              <div className="fill" style={{ width: '100%' }}></div>
+            </div>
+            <h3>5 years</h3>
+          </div>
+
+          <div className="skill">
+            <h2>C++</h2>
+            <div className="bar">
+              <div className="fill" style={{ width: '80%' }}></div>
+            </div>
+            <h3>4 years</h3>
+          </div>
+
+          <div className="skill">
+            <h2>Javascript</h2>
+            <div className="bar">
+              <div className="fill" style={{ width: '60%' }}></div>
+            </div>
+            <h3>3 years</h3>
+          </div>
+
+          <div className="skill">
+            <h2>HTML/CSS</h2>
+            <div className="bar">
+              <div className="fill" style={{ width: '60%' }}></div>
+            </div>
+            <h3>3 years</h3>
+          </div>
+
+          <div className="skill">
+            <h2>Assembly Language</h2>
+            <div className="bar">
+              <div className="fill" style={{ width: '40%' }}></div>
+            </div>
+            <h3>2 years</h3>
+          </div>
+        </section>
+      </header>
+
+      <section className="projects">
+        <h1>Academic Projects</h1>
+        <div className="project-grid">
+          <a href="https://colab.research.google.com/drive/1uhWD7znmnE5KvLwpnP8YUEAN3rNfwWcr?usp=sharing" className="project-card">
+            <img src="src/images/Image_Colorizer.png" alt="Image Colorizer" />
+            <h2>Image Colorizer</h2>
+            <h3>Allows the user to upload an image to colorize, as well as display a chosen number of our dataset images with loss calculations. Includes an effort to fine tune the model.</h3>
+          </a>
+          <a href="https://colab.research.google.com/drive/1e1xyik4_I6-XwwZdZxpa5C7_I9NjTakM?usp=sharing" className="project-card">
+            <img src="src/images/Image_Editor.png" alt="Image Editor" />
+            <h2>Image Editor</h2>
+            <h3>Allows the user to upload and edit an image, done in Google Collabs using Python.</h3>
+          </a>
+          <a href="https://github.com/ASK-07/Ferengi_Library" className="project-card">
+            <img src="src/images/Ferengi.png" alt="Ferengi Game Library" />
+            <h2>Ferengi Game Library</h2>
+            <h3>Flask Based Website that hosts several games for the user to play, as well as keeping leaderboards for 'in house' games. Done using Python and Javascript, deployed originally using Firebase.</h3>
+          </a>
+          <a href="https://github.com/ASK-07/BoldReader" className="project-card">
+            <img src="src/images/Bold_Reader.png" alt="Bold Reader" />
+            <h2>Bold Reader</h2>
+            <h3>Chrome Extension that transforms bodies of text to the user's preference.</h3>
+          </a>
+          <a href="https://github.com/ASK-07/Compiler_Construction" className="project-card">
+            <img src="src/images/Compiler_Snippet.png" alt="C-Like Compiler" />
+            <h2>C-Like Compiler</h2>
+            <h3>Converts high level mC code into corresponding assembly using Bison/Yacc.</h3>
+          </a>
+          <a href="https://github.com/ASK-07/Parallel_Processing_Public" className="project-card">
+            <img src="src/images/Parallel_Snippet.png" alt="Parallel Computations of Graphical Algorithms" />
+            <h2>Parallel Computations of Graphical Algorithms</h2>
+            <h3>MIS, Jacobi, Collatz, Fractal, converted from serial code to parallel code. Submitted as jobs to Frontera via (TACC)</h3>
+          </a>
+        </div>
+      </section>
     </>
   )
 }
